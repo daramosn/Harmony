@@ -18,6 +18,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
     title: 'Harmony Estates',
     description: 'Building dreams, creating Homes',
+    icons: 'icon.ico',
 }
 
 export default function RootLayout({
