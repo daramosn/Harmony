@@ -1,5 +1,10 @@
+import { Logo } from '../assets/icons/Logo'
+import { Facebook } from '../assets/icons/Facebook'
+import { Twitter } from '../assets/icons/Twitter'
+import { Instagram } from '@/assets/icons/Instagram'
+import { Linkedin } from '@/assets/icons/Linkedin'
+
 import './Home.scss'
-import { Logo } from '../assets/Logo'
 
 const Home = () => {
     return (
@@ -7,7 +12,7 @@ const Home = () => {
             <header className="header__hero">
                 <div className="header__hero-left">
                     <nav className="header__navbar">
-                        <Logo />
+                        <Logo className="header__logo" />
                         <ul className="header__navbar-items">
                             <li className="header__navbar-item">Features</li>
                             <li className="header__navbar-item">Services</li>
@@ -16,17 +21,18 @@ const Home = () => {
                     </nav>
 
                     <section className="header__titles">
-                        <h4 className="header__titles-slogan">
+                        <h5 className="header__titles-slogan">
                             Discover the perfect blend of luxury and tranquility
-                        </h4>
-                        <h2 className="header__titles-brand">Maple</h2>
+                        </h5>
+                        <h1 className="header__titles-brand">Maple</h1>
                     </section>
 
-                    <footer>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                    </footer>
+                    <section className="header__media">
+                        <Facebook className="header__media-brand" />
+                        <Instagram className="header__media-brand" />
+                        <Twitter className="header__media-brand" />
+                        <Linkedin className="header__media-brand" />
+                    </section>
                 </div>
 
                 <div className="header__hero-right" />

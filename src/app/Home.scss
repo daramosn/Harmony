@@ -5,6 +5,11 @@
     color: $color-black;
     display: grid;
 
+    &__logo {
+        fill: currentColor;
+        width: 80px;
+    }
+
     &__hero {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -17,11 +22,14 @@
 
         &-left {
             background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         &-right {
             min-height: 400px;
-            background-image: url('../assets/header-bg.webp');
+            background-image: url('../assets/images/header-bg.webp');
             background-size: cover;
             background-position: center center;
         }
@@ -79,16 +87,32 @@
 
     &__titles {
         margin: 32px max(32px, calc((100% - 700px) / 2));
+        text-align: center;
         &-slogan {
             font-size: $h5;
             font-weight: 400;
             color: $color-black-50;
             text-wrap: balance;
-            max-width: 40ch;
+            max-width: 30ch;
+            margin: auto auto;
         }
         &-brand {
-            font-size: $h1;
-            font-weight: 500;
+            font-size: 100px;
+            font-weight: 600;
+        }
+    }
+
+    &__media {
+        margin-bottom: 128px;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        color: #fabe7d;
+
+        &-brand {
+            fill: currentColor;
+            width: 55px;
+            aspect-ratio: 1/1;
         }
     }
 }
