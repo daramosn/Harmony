@@ -1,0 +1,14 @@
+$body-width: 1280px;
+
+/* Text-size styles */
+$ratio: 1.41;
+$base: 16px;
+
+$paragraph: $base;
+
+$h6: $base;
+$h5: $base * $ratio;
+$h4: $base * $ratio * $ratio;
+$h3: $base * $ratio * $ratio * $ratio;
+$h2: $base * $ratio * $ratio * $ratio * $ratio;
+$h1: $base * $ratio * $ratio * $ratio * $ratio * $ratio;

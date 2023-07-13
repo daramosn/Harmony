@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Harmony
 
-## Getting Started
+Harmony is a web application developed for a real estate company, providing a platform for property listings and related services. The project is built using Next.js, TypeScript, and Sass.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+-   [Features](#features)
+-   [Technologies](#technologies)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Contributing](#contributing)
+-   [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   Landing page of Harmony, a Real Estate Company
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies
 
-## Learn More
+-   [Next.js](https://nextjs.org/) - A React framework for server-rendered applications.
+-   JavaScript with TypeScript for interactive and dynamic functionality.
+-   Styling management: [Sass](https://sass-lang.com/).
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository to your local machine using the following command:
+   `git clone https://github.com/daramosn/harmony.git`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Navigate to the project directory:
+   `cd harmony`
 
-## Deploy on Vercel
+3. Install the project dependencies:
+   `npm install`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Start the development server:
+   `npm run dev`
+
+The application will be running at `http://localhost:3000`.
+
+2. Open the application in your web browser.
+
+## Contributing
+
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork this repository.
+2. Create a new branch for your changes: `git checkout -b feature/new-feature`.
+3. Make your modifications and commit your changes: `git commit -m 'Add new feature'`.
+4. Push the branch to your forked repository: `git push origin feature/new-feature`.
+5. Open a pull request on this repository and describe your changes in detail.
+
+## Contact
+
+If you have any questions or suggestions related to this project, you can contact me at [daramosn@unal.edu.co](mailto:daramosn@unal.edu.co).

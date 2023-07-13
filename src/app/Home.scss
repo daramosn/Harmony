@@ -1,0 +1,93 @@
+@use '../styles/styles.scss' as *;
+
+.header {
+    // padding: 64px max(32px, calc((100vw - 1200px) / 2));
+    color: $color-black;
+    display: grid;
+
+    &__hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+        min-height: 100svh;
+
+        @include media(lg) {
+            grid-template-columns: 1fr;
+        }
+
+        &-left {
+            background-color: white;
+        }
+
+        &-right {
+            min-height: 400px;
+            background-image: url('../assets/header-bg.webp');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &-card {
+            background-color: white;
+            position: absolute;
+            bottom: 15%;
+            right: 50%;
+            transform: translate(50%);
+            box-shadow: 0px 10px 20px -1px #fabe7d;
+
+            & > * {
+                width: 100px;
+                aspect-ratio: 1/1;
+                text-align: center;
+                font-size: $h5;
+                font-weight: 500;
+                margin: 8px 8px 64px 8px;
+                background-color: #fabe7d;
+                padding: 32px 8px;
+            }
+
+            // @include media(lg) {
+            //     display: none;
+            // }
+        }
+    }
+
+    &__navbar {
+        display: flex;
+        padding: 32px max(32px, calc((100% - 700px) / 2));
+        justify-content: space-between;
+        gap: 8px;
+        &-items {
+            display: flex;
+            padding: 0;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            padding: 8px;
+            border-radius: 5px;
+            transition: all 0.3s ease-out;
+            flex-grow: 1;
+            text-align: center;
+
+            &:hover {
+                background-color: $color-black-10;
+            }
+        }
+    }
+
+    &__titles {
+        margin: 32px max(32px, calc((100% - 700px) / 2));
+        &-slogan {
+            font-size: $h5;
+            font-weight: 400;
+            color: $color-black-50;
+            text-wrap: balance;
+            max-width: 40ch;
+        }
+        &-brand {
+            font-size: $h1;
+            font-weight: 500;
+        }
+    }
+}
