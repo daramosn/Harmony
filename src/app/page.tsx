@@ -21,6 +21,12 @@ const Home = () => {
                         </h4>
                         <h2 className="header__titles-brand">Maple</h2>
                     </section>
+
+                    <footer>
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                    </footer>
                 </div>
 
                 <div className="header__hero-right" />
