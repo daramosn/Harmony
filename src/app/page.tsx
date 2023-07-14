@@ -4,6 +4,10 @@ import { Twitter } from '../assets/icons/Twitter'
 import { Instagram } from '@/assets/icons/Instagram'
 import { Linkedin } from '@/assets/icons/Linkedin'
 
+import Image from 'next/image'
+
+import { FEATURES_LIST as features } from '../db/features'
+
 import './Home.scss'
 
 const Home = () => {
@@ -37,12 +41,21 @@ const Home = () => {
 
                 <div className="header__hero-right" />
                 <div className="header__hero-card">
-                    <h3>555</h3>
+                    <h3 className="header__hero-card-number">437</h3>
+                    <h2 className="header__hero-card-units">Units</h2>
                 </div>
             </header>
 
-            <section>
-                <div>Hola</div>
+            <section className="features">
+                <ul className="features__list">
+                    {features.map((feature) => (
+                        <li className="features__item" key={feature.id}>
+                            <Image src={feature.icon} alt="icon" />
+                            <h4>{feature.title}</h4>
+                            <p>{feature.description}</p>
+                        </li>
+                    ))}
+                </ul>
             </section>
             <section>Features</section>
 
