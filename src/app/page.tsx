@@ -50,9 +50,17 @@ const Home = () => {
                 <ul className="features__list">
                     {features.map((feature) => (
                         <li className="features__item" key={feature.id}>
-                            <Image src={feature.icon} alt="icon" />
-                            <h4>{feature.title}</h4>
-                            <p>{feature.description}</p>
+                            <Image
+                                className="features__item-icon"
+                                src={feature.icon}
+                                alt="icon"
+                            />
+                            <h4 className="features__item-title">
+                                {feature.title}
+                            </h4>
+                            <p className="features__item-description">
+                                {feature.description}
+                            </p>
                         </li>
                     ))}
                 </ul>

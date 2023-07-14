@@ -134,6 +134,20 @@
         padding: 0;
     }
     &__item {
-        max-width: 70ch;
+        display: grid;
+        align-items: center;
+        align-content: space-between;
+        &-icon {
+            height: 65px;
+        }
+        &-title {
+            height: 30px;
+            font-size: $h5;
+            margin: 32px 0;
+        }
+        &-description {
+            height: 180px;
+            margin: 0;
+        }
     }
 }
