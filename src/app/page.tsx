@@ -4,11 +4,17 @@ import { Twitter } from '../assets/icons/Twitter'
 import { Instagram } from '@/assets/icons/Instagram'
 import { Linkedin } from '@/assets/icons/Linkedin'
 
+import oakBg from '../assets/images/oak-bg.webp'
+import villaBg from '../assets/images/villa-bg.webp'
+import maple from '../assets/images/maple.webp'
+import oakvilleBg from '../assets/images/oakville-bg.webp'
+
 import Image from 'next/image'
 
 import { FEATURES_LIST as features } from '../db/features'
 
 import './Home.scss'
+import { Quote } from '@/assets/icons/Quote'
 
 const Home = () => {
     return (
@@ -65,11 +71,98 @@ const Home = () => {
                     ))}
                 </ul>
             </section>
-            <section>Features</section>
 
-            <section>Gallery</section>
+            <section className="gallery">
+                <h4 className="gallery__title">Live in the future</h4>
+                <div className="gallery__grid">
+                    <div className="gallery__grid-1">
+                        <Image
+                            className="gallery__grid-image"
+                            src={villaBg}
+                            alt="building"
+                        />
+                        <p className="gallery__grid-name"> 15 VILLA</p>
+                    </div>
+                    <div className="gallery__grid-2">
+                        <Image
+                            className="gallery__grid-image"
+                            src={oakBg}
+                            alt="building"
+                        />
+                        <p className="gallery__grid-name"> 150 OAK</p>
+                    </div>
+                    <div className="gallery__grid-3">
+                        <Image
+                            className="gallery__grid-image"
+                            src={oakvilleBg}
+                            alt="building"
+                        />
+                        <p className="gallery__grid-name"> 30 OAKVILLE</p>
+                    </div>
+                    <div className="gallery__grid-4">
+                        <Image
+                            className="gallery__grid-image"
+                            src={maple}
+                            alt="building"
+                        />
+                        <p className="gallery__grid-name"> 234 MAPLE</p>
+                    </div>
 
-            <section>Feedback</section>
+                    <div className="gallery__grid-text">
+                        <p>Comfort is a choice</p>
+                        <p className="gallery__grid-subtext">
+                            and we offer 4 of those
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="feedback">
+                <h2 className="feedback__title">What others are saying</h2>
+
+                <div className="feedback__articles">
+                    <article className="feedback__articles-item">
+                        <Quote className="feedback__icon" />
+                        <p className="feedback__view">
+                            I love the fact that there is a linking road in
+                            Mabushi opposite blue Cabana which is really
+                            amazing. I love the road network and the structure
+                            is impressive.
+                        </p>
+                        <h5 className="feedback__author">Mr & Mrs Bamidele</h5>
+                    </article>
+                    <article className="feedback__articles-item">
+                        <Quote className="feedback__icon" />
+                        <p className="feedback__view">
+                            I love the fact that there is a linking road in
+                            Mabushi opposite blue Cabana which is really
+                            amazing. I love the road network and the structure
+                            is impressive.
+                        </p>
+                        <h5 className="feedback__author">Mr & Mrs Bamidele</h5>
+                    </article>
+                    <article className="feedback__articles-item">
+                        <Quote className="feedback__icon" />
+                        <p className="feedback__view">
+                            I love the fact that there is a linking road in
+                            Mabushi opposite blue Cabana which is really
+                            amazing. I love the road network and the structure
+                            is impressive.
+                        </p>
+                        <h5 className="feedback__author">Mr & Mrs Bamidele</h5>
+                    </article>
+                    <article className="feedback__articles-item">
+                        <Quote className="feedback__icon" />
+                        <p className="feedback__view">
+                            I love the fact that there is a linking road in
+                            Mabushi opposite blue Cabana which is really
+                            amazing. I love the road network and the structure
+                            is impressive.
+                        </p>
+                        <h5 className="feedback__author">Mr & Mrs Bamidele</h5>
+                    </article>
+                </div>
+            </section>
 
             <footer>Footer</footer>
         </div>
