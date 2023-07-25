@@ -263,3 +263,88 @@
         fill: #fabe7d;
     }
 }
+
+.footer {
+    padding: 48px max(32px, calc((100vw - $body-width) / 2));
+    background-color: rgb(13, 13, 13);
+    color: white;
+    &__title {
+        font-size: $h4;
+        font-weight: 500;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+
+        @include media(md) {
+            grid-template-columns: 1fr;
+        }
+
+        &-left {
+            display: grid;
+        }
+        &-right {
+            display: grid;
+        }
+
+        &-label {
+            margin-top: 16px;
+            font-size: $h6;
+            font-weight: 200;
+            color: $color-black-25;
+        }
+        &-input {
+            font-size: $h6;
+            padding: 16px 8px;
+            background-color: rgb(13, 13, 13);
+            border: 1px solid $color-black-50;
+            color: $color-black-25;
+        }
+
+        &-textarea {
+            font-family: inherit;
+            font-size: $h6;
+            padding: 8px;
+            background-color: rgb(13, 13, 13);
+            color: $color-black-25;
+            border: 1px solid $color-black-50;
+            margin: 4px 0 16px 0;
+            height: 190px;
+        }
+        &-button {
+            padding: 16px 8px;
+            background-color: #fabe7d;
+            border: none;
+            padding: 16px 16px;
+            width: 300px;
+        }
+    }
+
+    &__links {
+        margin: 96px auto;
+        text-align: center;
+        &-logo {
+            margin-left: 21px;
+            width: 100px;
+            fill: white;
+        }
+
+        &-github {
+            margin: 16px auto;
+            width: 40px;
+            fill: $color-black-05;
+            transition: all 0.3s ease-out;
+            &:hover {
+                fill: #fabe7d;
+            }
+        }
+
+        &-phone {
+            font-weight: 200;
+        }
+        &-email {
+            font-weight: 200;
+        }
+    }
+}
