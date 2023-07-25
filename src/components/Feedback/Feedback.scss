@@ -1,0 +1,37 @@
+@use '../../styles/styles.scss' as *;
+
+.feedback {
+    padding: 128px max(32px, calc((100vw - $body-width) / 2));
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__title {
+        flex-basis: 30%;
+        text-wrap: balance;
+        flex-grow: 1;
+    }
+    &__articles {
+        flex-basis: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-item {
+            padding: 16px;
+            flex-grow: 1;
+            width: 50%;
+            min-width: 380px;
+            @include media(md) {
+                min-width: 350px;
+            }
+        }
+    }
+
+    &__icon {
+        width: 100px;
+        height: 100px;
+        fill: #fabe7d;
+    }
+}

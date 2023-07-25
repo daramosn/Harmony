@@ -1,0 +1,122 @@
+@use '../../styles/styles.scss' as *;
+
+.header {
+    color: $color-black;
+    display: grid;
+
+    &__logo {
+        fill: currentColor;
+        width: 80px;
+    }
+
+    &__hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+        min-height: 100svh;
+
+        @include media(lg) {
+            grid-template-columns: 1fr;
+        }
+
+        &-left {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-right {
+            min-height: 400px;
+            background-image: url('../../assets/images/header-bg.webp');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &-card {
+            background-color: white;
+            position: absolute;
+            bottom: 15%;
+            right: 48%;
+            transform: translate(50%);
+            box-shadow: 0px 10px 20px -1px #fabe7d;
+
+            &-number {
+                width: 130px;
+                aspect-ratio: 1/1;
+                text-align: center;
+                font-size: $h3;
+                color: $color-black;
+                font-weight: 500;
+                margin: 8px;
+                background-color: #fabe7d;
+                padding: 32px 8px;
+            }
+            &-units {
+                font-weight: 600;
+                text-align: center;
+                margin: 32px 8px;
+            }
+
+            @include media(lg) {
+                display: none;
+            }
+        }
+    }
+
+    &__navbar {
+        display: flex;
+        padding: 32px max(32px, calc((100% - 700px) / 2));
+        justify-content: space-between;
+        gap: 8px;
+        &-items {
+            display: flex;
+            padding: 0;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            padding: 8px;
+            border-radius: 5px;
+            transition: all 0.3s ease-out;
+            flex-grow: 1;
+            text-align: center;
+
+            &:hover {
+                background-color: $color-black-10;
+            }
+        }
+    }
+
+    &__titles {
+        margin: 32px max(32px, calc((100% - 700px) / 2));
+        text-align: center;
+        &-slogan {
+            font-size: $h5;
+            font-weight: 400;
+            color: $color-black-50;
+            text-wrap: balance;
+            max-width: 30ch;
+            margin: auto auto;
+        }
+        &-brand {
+            font-size: 100px;
+            font-weight: 600;
+        }
+    }
+
+    &__media {
+        margin-bottom: 128px;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        color: #fabe7d;
+
+        &-brand {
+            fill: currentColor;
+            width: 55px;
+            aspect-ratio: 1/1;
+        }
+    }
+}
