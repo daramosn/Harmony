@@ -254,6 +254,9 @@
             flex-grow: 1;
             width: 50%;
             min-width: 380px;
+            @include media(md) {
+                min-width: 350px;
+            }
         }
     }
 
