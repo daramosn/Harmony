@@ -153,10 +153,11 @@
 }
 
 .gallery {
-    padding: 48px max(32px, calc((100vw - $body-width) / 2));
+    padding: 128px max(32px, calc((100vw - $body-width) / 2));
     &__title {
         font-size: $h4;
         font-weight: 500;
+        margin-top: 0;
     }
 
     &__grid {
@@ -233,7 +234,8 @@
 }
 
 .feedback {
-    padding: 48px max(32px, calc((100vw - $body-width) / 2));
+    padding: 128px max(32px, calc((100vw - $body-width) / 2));
+    background-color: #f8f8f8;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -268,7 +270,8 @@
 }
 
 .footer {
-    padding: 48px max(32px, calc((100vw - $body-width) / 2));
+    padding: 128px max(32px, calc((100vw - $body-width) / 2));
+    padding-bottom: 64px;
     background-color: rgb(13, 13, 13);
     color: white;
     &__title {
